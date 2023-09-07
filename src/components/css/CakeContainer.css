@@ -1,0 +1,223 @@
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+h1{
+    color: blue;
+}
+
+.icon{
+    margin-left: 60vw;
+    border: 1px solid black;
+    padding-top: 12px;
+    /* background-color: rgb(28, 158, 213); */
+    position: relative;
+    border-radius: 50%;
+    width: 45px;
+    height: 40px;
+    
+}
+
+.in-cart{
+    background: red;
+    border-radius: 50%;
+    justify-content: center;
+    color: white;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    transform: translate(-55%,115%);
+}
+
+.add-to-cart {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.add-to-cart:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.add-to-cart:main,
+.add-to-cart:focus {
+  user-select: auto;
+}
+
+.add-to-cart:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.add-to-cart:disabled {
+  cursor: auto;
+}
+
+.btns {
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 150px;
+    gap: 10px;
+    --b: 2.5px;   /* the border thickness */
+    --h: 1.2em; /* the height */
+  }
+  
+  .btns button {
+    --_c: #88C100;
+    flex: calc(1.25 + var(--_s,0));
+    min-width: 0;
+    font-size: 40px;
+    font-weight: bold;
+    height: var(--h);
+    cursor: pointer;
+    color: var(--_c);
+    border: var(--b) solid var(--_c);
+    background: 
+      conic-gradient(at calc(100% - 1.3*var(--b)) 0,var(--_c) 209deg, #0000 211deg) 
+      border-box;
+    clip-path: polygon(0 0,100% 0,calc(100% - 0.577*var(--h)) 100%,0 100%);
+    padding: 0 calc(0.288*var(--h)) 0 0;
+    margin: 0 calc(-0.288*var(--h)) 0 0;
+    box-sizing: border-box;
+    transition: flex .4s;
+  }
+  .btns button + button {
+    --_c: #FF003C;
+    flex: calc(.75 + var(--_s,0));
+    background: 
+      conic-gradient(from -90deg at calc(1.3*var(--b)) 100%,var(--_c) 119deg, #0000 121deg) 
+      border-box;
+    clip-path: polygon(calc(0.577*var(--h)) 0,100% 0,100% 100%,0 100%);
+    margin: 0 0 0 calc(-0.288*var(--h));
+    padding: 0 0 0 calc(0.288*var(--h));
+  }
+  .btns button:focus-visible {
+    outline-offset: calc(-2*var(--b));
+    outline: calc(var(--b)/2) solid #000;
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  .btns button:focus-visible + button {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  .btns button:has(+ button:focus-visible) {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+  }
+  button:hover,
+  button:active:not(:focus-visible) {
+    --_s: .75;
+  }
+  button:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #fff;
+  }
+  
+
+.remove-btn {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.remove-btn:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.remove-btn:main,
+.remove-btn:focus {
+  user-select: auto;
+}
+
+.remove-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.remove-btn:disabled {
+  cursor: auto;
+}
